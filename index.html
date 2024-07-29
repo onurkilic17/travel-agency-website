@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="^#fff">
+  <!-- #####Document Title##### -->
+  <title>Travel Agency</title>
+
+  <!--#######STYLESHEET######## -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&amp;display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+<body>
+
+
+  <main class="main" id="top">
+    <div class="container mx-auto">
+      <!--Navbar-->
+      <nav class="navbar navbar-expand-lg bg-white py-3">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img class="travella-logo1 img-fluid" src="/travella-logo.png"
+              alt="travella-logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center fw-bold opacity-75" id="navbarNav">
+            <ul class="navbar-nav">
+              <i class="fa-solid fa-location-dot my-auto"></i>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Locations</a>
+              </li>
+              <i class="fa-solid fa-plane my-auto ms-4"></i>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Flights</a>
+              </li>
+              <i class="fa-solid fa-hotel my-auto ms-4"></i>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Hotels</a>
+              </li>
+              <i class="fa-solid fa-bolt my-auto ms-4"></i>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Activities</a>
+              </li>
+              </li>
+            </ul>
+          </div>
+          <ul class="navbar-nav">
+            <li class="nav-item me-3 fw-bold opacity-75">
+              <a class="nav-link" href="#">Support</a>
+            </li>
+            <li>
+              <button type="button" class="btn btn-sign fw-bold">Sign in</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </main>
+
+  <!-- head section -->
+  <section class="mt-7 py-0">
+    <!--left-->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 py-5 py-xl-5 py-xxl-7">
+          <h1 class="display-3 text-1000 fw-normal fs-1">Let’s make a tour</h1>
+          <h1 class="display-3 discover-text fw-bold fs-1">Discover the beauty</h1>
+          <div class="pt-5">
+            <nav class="mini-nav">
+              <div class="nav nav-tabs voyage-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                  type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i
+                    class="fas fa-map-marker-alt"></i></button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                  type="button" role="tab" aria-controls="nav-profile" aria-selected="false"> <i
+                    class="fas fa-plane"></i></button>
+                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
+                  type="button" role="tab" aria-controls="nav-contact" aria-selected="false"> <i
+                    class="fas fa-hotel"></i></button>
+              </div>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                  <form class="row g-4 mt-5">
+                    <div class="col-sm-6 col-md-6 col-xl-5">
+                      <div class="input-group-icon">
+                        <label class="form-label visually-hidden" for="inputAddress1">Address 1</label>
+                        <input class="form-control input-box form-voyage-control" id="inputAddress1" type="text"
+                          placeholder="From where" /><span class="nav-link-icon text-800 fs--1 input-box-icon"></span>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-xl-5">
+                      <div class="input-group-icon">
+                        <label class="form-label visually-hidden" for="inputAddress2">Address 2</label>
+                        <input class="form-control input-box form-voyage-control" id="inputAddress2" type="text"
+                          placeholder="To where" /><span class="nav-link-icon text-800 fs--1 input-box-icon"></span>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-xl-5">
+                      <div class="input-group-icon">
+                        <input class="form-control input-box form-voyage-control" id="inputdateOne" type="date" /><span
+                          class="nav-link-icon text-800 fs--1 input-box-icon"></span>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-xl-5">
+                      <div class="input-group-icon">
+                        <input class="form-control input-box form-voyage-control" id="inputDateTwo" type="date" /><span
+                          class="nav-link-icon text-800 fs--1 input-box-icon"></span>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-xl-5">
+                      <div class="input-group-icon">
+                        <label class="form-label visually-hidden" for="inputPersonOne">Person</label>
+                        <select class="form-select form-voyage-select input-box" id="inputPersonOne">
+                          <option selected="selected">2 Adults</option>
+                          <option>2 Adults 1 children</option>
+                          <option>2 Adults 2 children</option>
+                        </select><span class="nav-link-icon text-800 fs--1 input-box-icon"></span>
+                      </div>
+                    </div>
+                    <div class="col-12 col-xl-10 col-lg-12 d-grid mt-6">
+                      <button class="btn search-button" type="submit">Search Packages</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                  <form class="row g-4 mt-5">
+                    <div class="col-6">
+                      <div class="input-group-icon">
+                        <label class="form-label visually-hidden" for="inputAddressThree">Address 1</label>
+                        <input class="form-control input-box form-voyage-control" id="inputAddressThree" type="text"
+                          placeholder="From where" /><span class="nav-link-icon text-800 fs--1 input-box-icon"></span>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="input-group-icon">
+                        <label class="form-label visually-hidden" for="inputAddressFour">Address 2</label>
+                        <input class="form-control input-box form-voyage-control" id="inputAddressFour" type="text"
+                          placeholder="To where" /><span class="nav-link-icon text-800 fs--1 input-box-icon"></span>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="input-group-icon">
+                        <input class="form-control input-box form-voyage-control" id="inputDateThree"
+                          type="date" /><span class="nav-link-icon text-800 fs--1 input-box-icon"></span>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="input-group-icon">
+                        <input class="form-control input-box form-voyage-control" id="inputDateFour" type="date" /><span
+                          class="nav-link-icon text-800 fs--1 input-box-icon"></span>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="input-group-icon">
+                        <label class="form-label visually-hidden" for="inputPeopleTwo">People</label>
+                        <select class="form-select form-voyage-select input-box" id="inputPeopleTwo">
+                          <option selected="selected">2 Adults</option>
+                          <option>2 Adults 1 children</option>
+                          <option>2 Adults 2 children</option>
+                        </select><span class="nav-link-icon text-800 fs--1 input-box-icon"></span>
+                      </div>
+                    </div>
+                    <div class="col-12 d-grid mt-6">
+                      <button class="btn search-button2" type="submit">Search Packages</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                  <form class="row g-4 mt-5">
+                    <div class="col-6">
+                      <div class="input-group-icon">
+                        <input class="form-control input-box form-voyage-control" id="inputDateFive" type="date" /><span
+                          class="nav-link-icon text-800 fs--1 input-box-icon"></span>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="input-group-icon">
+                        <input class="form-control input-box form-voyage-control" id="inputDateSix" type="date" /><span
+                          class="nav-link-icon text-800 fs--1 input-box-icon"></span>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="input-group-icon">
+                        <label class="form-label visually-hidden" for="inputPeopleThree">Person</label>
+                        <select class="form-select form-voyage-select input-box" id="inputPeopleThree">
+                          <option selected="selected">2 Adults</option>
+                          <option>2 Adults 1 children</option>
+                          <option>2 Adults 2 children</option>
+                        </select><span class="nav-link-icon text-800 fs--1 input-box-icon"></span>
+                      </div>
+                    </div>
+                    <div class="col-12 d-grid mt-6">
+                      <button class="btn search-button3" type="submit">Search Packages</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <!-- right -->
+        <div class="col-6 px-0 ">
+          <img class="" src="/assets/img/main-image1.png" alt="main-image1">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section-2-Begin -->
+  <section class="py-0 ">
+
+    <div class="container-fluid">
+      <div class="row">
+        <!-- left -->
+        <div class="col-lg-6 px-0"><img class="img-fluid order-md-0 mb-4 h-100 fit-cover" src="/assets/img/image-2.png"
+            alt="image-2" /></div>
+
+        <!-- right -->
+        <div class="col-lg-6 px-0 bg-gradient bg-offcanvas-right ">
+          <div class="mx-6 mx-xl-8 my-8 ">
+            <div id="text-duzenleme1" class="align-items-center d-block d-flex mb-5 mt-5 "><img
+                class="img-fluid me-3 me-md-2 me-lg-4" src="assets/img/plane-2.png" alt="..." />
+              <div class="flex-1 align-items-center pt-2">
+                <h5 class="fw-semibold text-light">Visit the greatest places</h5>
+              </div>
+            </div>
+            <div id="text-duzenleme2" class="align-items-center d-block d-flex mb-5"><img
+                class="img-fluid me-3 me-md-2 me-lg-4" src="assets/img/clock.png" alt="..." />
+              <div class="flex-1 align-items-center pt-2">
+                <h5 class="fw-semibold text-light">Make your own plans.</h5>
+              </div>
+            </div>
+            <div id="text-duzenleme3" class="align-items-center d-block d-flex mb-5"><img
+                class="img-fluid me-3 me-md-2 me-lg-4" src="assets/img/label.png" alt="..." />
+              <div class="flex-1 align-items-center pt-2">
+                <h5 class="fw-semibold text-light">Save 50% on your next trip</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <!--Flash Deals-->
+    <section id="testimonial pt-5">
+      <div class="container">
+        <div class="row h-100">
+          <div class="col-lg-7 mx-auto text-center mb-6">
+            <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3 flash-deals pt-5 px-5">Flash Deals</h5>
+          </div>
+          <div class="col-12 ">
+            <div class="carousel slide" id="carouselTestimonials" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <div class="row h-100 align-items-center g-2">
+                    <div class="col-md-4 mb-3 mb-md-0 h-100">
+                      <div class="card card-span h-100 text-dark"><img class="img-fluid h-100"
+                          src="/assets/img/maldives.png" alt="..." />
+                        <div class="card-img-overlay ps-0"><span class="badge bg-primary ms-3 me-1 p-2"><i
+                              class="fas fa-clock me-1"></i><span>20:04:32:21</span></span><span
+                            class="badge bg-secondary p-2"><i class="fas fa-bolt me-1"></i><span>trending</span><i
+                              class="fas fa-bolt ms-1"> </i></span></div>
+                        <div class="card-body ps-0">
+                          <h5 class="fw-bold text-1000 mb-4 text-truncate">Mermaid Beach Resort: The most joyful way to
+                            spend your holiday</h5>
+                          <div class="d-flex align-items-center justify-content-start"><span
+                              class="text-800 fs--1 me-2"><i class="fas fa-map-marker-alt"></i></span><span
+                              class="text-900 me-3">Maldives</span><span class="text-800 fs--1 me-2"><i
+                                class="fas fa-calendar"></i></span><span class="text-900">4 days</span></div>
+                          <p class="text-decoration-line-through text-900 mt-3 mb-0">$200</p>
+                          <h1 class="mb-3 text-primary fw-bolder fs-4"><span>$175</span><span
+                              class="text-900 fs--1 fw-normal">/Per person</span></h1><span
+                            class="badge bg-soft-secondary p-2"><i
+                              class="fas fa-tag text-secondary fs--1 me-1"></i><span
+                              class="text-secondary fw-normal fs-1">-15%</span></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0 h-100">
+                      <div class="card card-span h-100 text-dark"><img class="img-fluid h-100"
+                          src="/assets/img/cinnamon.png" alt="..." />
+                        <div class="card-img-overlay ps-0"><span class="badge bg-primary ms-3 me-1 p-2"><i
+                              class="fas fa-clock me-1"></i><span>20:04:32:21</span></span><span
+                            class="badge bg-secondary p-2"><i class="fas fa-bolt me-1"></i><span>trending</span><i
+                              class="fas fa-bolt ms-1"> </i></span></div>
+                        <div class="card-body ps-0">
+                          <h5 class="fw-bold text-1000 mb-4 text-truncate">Bora Bora: Enjoy a romantic cruise tour of at
+                            the sunny side of life</h5>
+                          <div class="d-flex align-items-center justify-content-start"><span
+                              class="text-800 fs--1 me-2"><i class="fas fa-map-marker-alt"></i></span><span
+                              class="text-900 me-3">Maldives</span><span class="text-800 fs--1 me-2"><i
+                                class="fas fa-calendar"></i></span><span class="text-900">4 days</span></div>
+                          <p class="text-decoration-line-through text-900 mt-3 mb-0">$300</p>
+                          <h1 class="mb-3 text-primary fw-bolder fs-4"><span>$250</span><span
+                              class="text-900 fs--1 fw-normal">/Per person</span></h1><span
+                            class="badge bg-soft-secondary p-2"><i
+                              class="fas fa-tag text-secondary fs--1 me-1"></i><span
+                              class="text-secondary fw-normal fs-1">-15%</span></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0 h-100">
+                      <div class="card card-span h-100 text-dark"><img class="img-fluid h-100"
+                          src="/assets/img/dhigu.png" alt="..." />
+                        <div class="card-img-overlay ps-0"><span class="badge bg-primary ms-3 me-1 p-2"><i
+                              class="fas fa-clock me-1"></i><span>20:04:32:21</span></span><span
+                            class="badge bg-secondary p-2"><i class="fas fa-bolt me-1"></i><span>trending</span><i
+                              class="fas fa-bolt ms-1"> </i></span></div>
+                        <div class="card-body ps-0">
+                          <h5 class="fw-bold text-1000 mb-4 text-truncate">Fihalhohi Island Resort: Luxury destination
+                            without compromise</h5>
+                          <div class="d-flex align-items-center justify-content-start"><span
+                              class="text-800 fs--1 me-2"><i class="fas fa-map-marker-alt"></i></span><span
+                              class="text-900 me-3">Maldives</span><span class="text-800 fs--1 me-2"><i
+                                class="fas fa-calendar"></i></span><span class="text-900">4 days</span></div>
+                          <p class="text-decoration-line-through text-900 mt-3 mb-0">$375</p>
+                          <h1 class="mb-3 text-primary fw-bolder fs-4"><span>$300</span><span
+                              class="text-900 fs--1 fw-normal">/Per person</span></h1><span
+                            class="badge bg-soft-secondary p-2"><i
+                              class="fas fa-tag text-secondary fs--1 me-1"></i><span
+                              class="text-secondary fw-normal fs-1">-15%</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <div class="row h-100 align-items-center g-2">
+                    <div class="col-md-4 mb-3 mb-md-0 h-100">
+                      <div class="card card-span h-100 text-dark"><img class="img-fluid h-100"
+                          src="/assets/img/maldives.png" alt="..." />
+                        <div class="card-img-overlay ps-0"><span class="badge bg-primary ms-3 me-1 p-2"><i
+                              class="fas fa-clock me-1"></i><span>20:04:32:21</span></span><span
+                            class="badge bg-secondary p-2"><i class="fas fa-bolt me-1"></i><span>trending</span><i
+                              class="fas fa-bolt ms-1"> </i></span></div>
+                        <div class="card-body ps-0">
+                          <h5 class="fw-bold text-1000 mb-4 text-truncate">Mermaid Beach Resort: The most joyful way to
+                            spend your holiday</h5>
+                          <div class="d-flex align-items-center justify-content-start"><span
+                              class="text-800 fs--1 me-2"><i class="fas fa-map-marker-alt"></i></span><span
+                              class="text-900 me-3">Maldives</span><span class="text-800 fs--1 me-2"><i
+                                class="fas fa-calendar"></i></span><span class="text-900">4 days</span></div>
+                          <p class="text-decoration-line-through text-900 mt-3 mb-0">$200</p>
+                          <h1 class="mb-3 text-primary fw-bolder fs-4"><span>$175</span><span
+                              class="text-900 fs--1 fw-normal">/Per person</span></h1><span
+                            class="badge bg-soft-secondary p-2"><i class="fas fa-tag text-secondary fs--1 me-1"></i>
+                            <span class="text-secondary fw-normal fs-1">-15%</span></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0 h-100">
+                      <div class="card card-span h-100 text-dark"><img class="img-fluid h-100"
+                          src="/assets/img/cinnamon.png" alt="..." />
+                        <div class="card-img-overlay ps-0"><span class="badge bg-primary ms-3 me-1 p-2"><i
+                              class="fas fa-clock me-1"></i><span>20:04:32:21</span></span><span
+                            class="badge bg-secondary p-2"><i class="fas fa-bolt me-1"></i><span>trending</span><i
+                              class="fas fa-bolt ms-1"> </i></span></div>
+                        <div class="card-body ps-0">
+                          <h5 class="fw-bold text-1000 mb-4 text-truncate">Bora Bora: Enjoy a romantic cruise tour of at
+                            the sunny side of life</h5>
+                          <div class="d-flex align-items-center justify-content-start"><span
+                              class="text-800 fs--1 me-2"><i class="fas fa-map-marker-alt"></i></span><span
+                              class="text-900 me-3">Maldives</span><span class="text-800 fs--1 me-2"><i
+                                class="fas fa-calendar"></i></span><span class="text-900">4 days</span></div>
+                          <p class="text-decoration-line-through text-900 mt-3 mb-0">$300</p>
+                          <h1 class="mb-3 text-primary fw-bolder fs-4"><span>$250</span><span
+                              class="text-900 fs--1 fw-normal">/Per person</span></h1><span
+                            class="badge bg-soft-secondary p-2"><i
+                              class="fas fa-tag text-secondary fs--1 me-1"></i><span
+                              class="text-secondary fw-normal fs-1">-15%</span></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0 h-100">
+                      <div class="card card-span h-100 text-dark"><img class="img-fluid h-100"
+                          src="/assets/img/dhigu.png" alt="..." />
+                        <div class="card-img-overlay ps-0"><span class="badge bg-primary ms-3 me-1 p-2"><i
+                              class="fas fa-clock me-1"></i><span>20:04:32:21</span></span><span
+                            class="badge bg-secondary p-2"><i class="fas fa-bolt me-1"></i><span>trending</span><i
+                              class="fas fa-bolt ms-1"> </i></span></div>
+                        <div class="card-body ps-0">
+                          <h5 class="fw-bold text-1000 mb-4 text-truncate">Fihalhohi Island Resort: Luxury destination
+                            without compromise</h5>
+                          <div class="d-flex align-items-center justify-content-start"><span
+                              class="text-800 fs--1 me-2"><i class="fas fa-map-marker-alt"></i></span><span
+                              class="text-900 me-3">Maldives</span><span class="text-800 fs--1 me-2"><i
+                                class="fas fa-calendar"></i></span><span class="text-900">4 days</span></div>
+                          <p class="text-decoration-line-through text-900 mt-3 mb-0">$375</p>
+                          <h1 class="mb-3 text-primary fw-bolder fs-4"><span>$300</span><span
+                              class="text-900 fs--1 fw-normal">/Per person</span></h1><span
+                            class="badge bg-soft-secondary p-2"><i
+                              class="fas fa-tag text-secondary fs--1 me-1"></i><span
+                              class="text-secondary fw-normal fs-1">-15%</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                  <div class="row h-100 align-items-center g-2">
+                    <div class="col-md-4 mb-3 mb-md-0 h-100">
+                      <div class="card card-span h-100 text-dark"><img class="img-fluid h-100"
+                          src="/assets/img/maldives.png" alt="..." />
+                        <div class="card-img-overlay ps-0"><span class="badge bg-primary ms-3 me-1 p-2"><i
+                              class="fas fa-clock me-1"></i><span>20:04:32:21</span></span><span
+                            class="badge bg-secondary p-2"><i class="fas fa-bolt me-1"></i><span>trending</span><i
+                              class="fas fa-bolt ms-1"> </i></span></div>
+                        <div class="card-body ps-0">
+                          <h5 class="fw-bold text-1000 mb-4 text-truncate">Mermaid Beach Resort: The most joyful way to
+                            spend your holiday</h5>
+                          <div class="d-flex align-items-center justify-content-start"><span
+                              class="text-800 fs--1 me-2"><i class="fas fa-map-marker-alt"></i></span><span
+                              class="text-900 me-3">Maldives</span><span class="text-800 fs--1 me-2"><i
+                                class="fas fa-calendar"></i></span><span class="text-900">4 days</span></div>
+                          <p class="text-decoration-line-through text-900 mt-3 mb-0">$200</p>
+                          <h1 class="mb-3 text-primary fw-bolder fs-4"><span>$175</span><span
+                              class="text-900 fs--1 fw-normal">/Per person</span></h1><span
+                            class="badge bg-soft-secondary p-2"><i
+                              class="fas fa-tag text-secondary fs--1 me-1"></i><span
+                              class="text-secondary fw-normal fs-1">-15%</span></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0 h-100">
+                      <div class="card card-span h-100 text-dark"><img class="img-fluid h-100"
+                          src="/assets/img/cinnamon.png" alt="..." />
+                        <div class="card-img-overlay ps-0"><span class="badge bg-primary ms-3 me-1 p-2"><i
+                              class="fas fa-clock me-1"></i><span>20:04:32:21</span></span><span
+                            class="badge bg-secondary p-2"><i class="fas fa-bolt me-1"></i><span>trending</span><i
+                              class="fas fa-bolt ms-1"> </i></span></div>
+                        <div class="card-body ps-0">
+                          <h5 class="fw-bold text-1000 mb-4 text-truncate">Bora Bora: Enjoy a romantic cruise tour of at
+                            the sunny side of life</h5>
+                          <div class="d-flex align-items-center justify-content-start"><span
+                              class="text-800 fs--1 me-2"><i class="fas fa-map-marker-alt"></i></span><span
+                              class="text-900 me-3">Maldives</span><span class="text-800 fs--1 me-2"><i
+                                class="fas fa-calendar"></i></span><span class="text-900">4 days</span></div>
+                          <p class="text-decoration-line-through text-900 mt-3 mb-0">$300</p>
+                          <h1 class="mb-3 text-primary fw-bolder fs-4"><span>$250</span><span
+                              class="text-900 fs--1 fw-normal">/Per person</span></h1><span
+                            class="badge bg-soft-secondary p-2"><i
+                              class="fas fa-tag text-secondary fs--1 me-1"></i><span
+                              class="text-secondary fw-normal fs-1">-15%</span></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0 h-100">
+                      <div class="card card-span h-100 text-dark"><img class="img-fluid h-100"
+                          src="/assets/img/dhigu.png" alt="..." />
+                        <div class="card-img-overlay ps-0"><span class="badge bg-primary ms-3 me-1 p-2"><i
+                              class="fas fa-clock me-1"></i><span>20:04:32:21</span></span><span
+                            class="badge bg-secondary p-2"><i class="fas fa-bolt me-1"></i><span>trending</span><i
+                              class="fas fa-bolt ms-1"> </i></span></div>
+                        <div class="card-body ps-0">
+                          <h5 class="fw-bold text-1000 mb-4 text-truncate">Fihalhohi Island Resort: Luxury destination
+                            without compromise</h5>
+                          <div class="d-flex align-items-center justify-content-start"><span
+                              class="text-800 fs--1 me-2"><i class="fas fa-map-marker-alt"></i></span><span
+                              class="text-900 me-3">Maldives</span><span class="text-800 fs--1 me-2"><i
+                                class="fas fa-calendar"></i></span><span class="text-900">4 days</span></div>
+                          <p class="text-decoration-line-through text-900 mt-3 mb-0">$375</p>
+                          <h1 class="mb-3 text-primary fw-bolder fs-4"><span>$300</span><span
+                              class="text-900 fs--1 fw-normal">/Per person</span></h1><span
+                            class="badge bg-soft-secondary p-2"><i
+                              class="fas fa-tag text-secondary fs--1 me-1"></i><span
+                              class="text-secondary fw-normal fs-1">-15%</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row h-100 align-items-center g-2">
+                    <div class="col-md-4 mb-3 mb-md-0 h-100">
+                      <div class="card card-span h-100 text-dark"><img class="img-fluid h-100"
+                          src="/assets/img/maldives.png" alt="..." />
+                        <div class="card-img-overlay ps-0"><span class="badge bg-primary ms-3 me-1 p-2"><i
+                              class="fas fa-clock me-1"></i><span>20:04:32:21</span></span><span
+                            class="badge bg-secondary p-2"><i class="fas fa-bolt me-1"></i><span>trending</span><i
+                              class="fas fa-bolt ms-1"> </i></span></div>
+                        <div class="card-body ps-0">
+                          <h5 class="fw-bold text-1000 mb-4 text-truncate">Mermaid Beach Resort: The most joyful way to
+                            spend your holiday</h5>
+                          <div class="d-flex align-items-center justify-content-start"><span
+                              class="text-800 fs--1 me-2"><i class="fas fa-map-marker-alt"></i></span><span
+                              class="text-900 me-3">Maldives</span><span class="text-800 fs--1 me-2"><i
+                                class="fas fa-calendar"></i></span><span class="text-900">4 days</span></div>
+                          <p class="text-decoration-line-through text-900 mt-3 mb-0">$200</p>
+                          <h1 class="mb-3 text-primary fw-bolder fs-4"><span>$175</span><span
+                              class="text-900 fs--1 fw-normal">/Per person</span></h1><span
+                            class="badge bg-soft-secondary p-2"><i
+                              class="fas fa-tag text-secondary fs--1 me-1"></i><span
+                              class="text-secondary fw-normal fs-1">-15%</span></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0 h-100">
+                      <div class="card card-span h-100 text-dark"><img class="img-fluid h-100"
+                          src="/assets/img/cinnamon.png" alt="..." />
+                        <div class="card-img-overlay ps-0"><span class="badge bg-primary ms-3 me-1 p-2"><i
+                              class="fas fa-clock me-1"></i><span>20:04:32:21</span></span><span
+                            class="badge bg-secondary p-2"><i class="fas fa-bolt me-1"></i><span>trending</span><i
+                              class="fas fa-bolt ms-1"> </i></span></div>
+                        <div class="card-body ps-0">
+                          <h5 class="fw-bold text-1000 mb-4 text-truncate">Bora Bora: Enjoy a romantic cruise tour of at
+                            the sunny side of life</h5>
+                          <div class="d-flex align-items-center justify-content-start"><span
+                              class="text-800 fs--1 me-2"><i class="fas fa-map-marker-alt"></i></span><span
+                              class="text-900 me-3">Maldives</span><span class="text-800 fs--1 me-2"><i
+                                class="fas fa-calendar"></i></span><span class="text-900">4 days</span></div>
+                          <p class="text-decoration-line-through text-900 mt-3 mb-0">$300</p>
+                          <h1 class="mb-3 text-primary fw-bolder fs-4"><span>$250</span><span
+                              class="text-900 fs--1 fw-normal">/Per person</span></h1><span
+                            class="badge bg-soft-secondary p-2"><i
+                              class="fas fa-tag text-secondary fs--1 me-1"></i><span
+                              class="text-secondary fw-normal fs-1">-15%</span></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3 mb-md-0 h-100">
+                      <div class="card card-span h-100 text-dark"><img class="img-fluid h-100"
+                          src="/assets/img/dhigu.png" alt="..." />
+                        <div class="card-img-overlay ps-0"><span class="badge bg-primary ms-3 me-1 p-2"><i
+                              class="fas fa-clock me-1"></i><span>20:04:32:21</span></span><span
+                            class="badge bg-secondary p-2"><i class="fas fa-bolt me-1"></i><span>trending</span><i
+                              class="fas fa-bolt ms-1"> </i></span></div>
+                        <div class="card-body ps-0">
+                          <h5 class="fw-bold text-1000 mb-4 text-truncate">Fihalhohi Island Resort: Luxury destination
+                            without compromise</h5>
+                          <div class="d-flex align-items-center justify-content-start"><span
+                              class="text-800 fs--1 me-2"><i class="fas fa-map-marker-alt"></i></span><span
+                              class="text-900 me-3">Maldives</span><span class="text-800 fs--1 me-2"><i
+                                class="fas fa-calendar"></i></span><span class="text-900">4 days</span></div>
+                          <p class="text-decoration-line-through text-900 mt-3 mb-0">$375</p>
+                          <h1 class="mb-3 text-primary fw-bolder fs-4"><span>$300</span><span
+                              class="text-900 fs--1 fw-normal">/Per person</span></h1><span
+                            class="badge bg-soft-secondary p-2"><i
+                              class="fas fa-tag text-secondary fs--1 me-1"></i><span
+                              class="text-secondary fw-normal fs-1">-15%</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonials"
+                    data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span
+                      class="visually-hidden">Previous</span></button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonials"
+                    data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span
+                      class="visually-hidden">Next </span></button>
+                </div>
+              </div>
+              <div class="row flex-center">
+                <div class="col-auto z-index-2 " id="carouselExampleIndicators">
+                  <ul class="carousel-indicators me-xxl-7 me-xl-4 me-lg-7  carousel slide ">
+                    <li class="active" data-bs-target="#carouselTestimonials" data-bs-slide-to="0" aria-label="Slide 1">
+                    </li>
+                    <li data-bs-target="#carouselTestimonials" data-bs-slide-to="1" aria-label="Slide 2"></li>
+                    <li data-bs-target="#carouselTestimonials" data-bs-slide-to="2" aria-label="Slide 3"></li>
+                    <li data-bs-target="#carouselTestimonials" data-bs-slide-to="3" aria-label="Slide 4"></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Popular Places-->
+
+    <div class="conta fw-bold pt-5">
+      <div class="kisim1 pt-5 bg-gradient text-white">
+        <img class=" mb-5 px-5" src="/assets/img/icon-location.png" alt="">
+        <h2 class="mb-5 px-5">Popular places</h2>
+        <p class="px-5" style="width: 85%;">Enjoy the benefits of our packages to the sites where our visitors have
+          more fun.
+          Properly arranged
+          with low costing.</p>
+      </div>
+      <div class="kisim2 position-relative"><img class="w-100 position-absolute" src="/assets/img/agra.png" alt="">
+        <img class="resim-image" src="/assets/img/gift-ico.png" alt="">
+        <p class="resim-paragrafi">Agra</p>
+        <p class="resim-paragrafi-2">10 Packages</p>
+      </div>
+      <div class="kisim3  position-relative"><img class="w-100 position-absolute" src="/assets/img/kualalumpur.png"
+          alt="">
+        <img class="resim-image" src="/assets/img/gift-ico.png" alt="">
+        <p class="resim-paragrafi">Dubai</p>
+        <p class="resim-paragrafi-2">10 Packages</p>
+      </div>
+      <div class="bg-white kisimsag"></div>
+      <div class="kisim4"><img class="w-100" src="/assets/img/dhigu.png" alt="">
+        <img class="resim-image" src="" alt="">
+        <p class="resim-paragrafi"></p>
+        <p class="resim-paragrafi-2"></p>
+      </div>
+      <div class="kisim5"><img class="w-100" src="/assets/img/cinnamon.png" alt="">
+        <img class="resim-image" src="" alt="">
+        <p class="resim-paragrafi"></p>
+        <p class="resim-paragrafi-2"></p>
+      </div>
+      <div class="kisim6 text-white bg-orange-gradient">
+        <p class="align-self-end mb-5 px-5">Wanna travel to the most thrilling spot on the planet? We've set a bunch
+          of
+          surprises for you.</p>
+        <div class="text-center"><button class="btn text-white">Click to view more <img src="/assets/img/ok.png">
+          </button>
+        </div>
+
+      </div>
+      <div class="kisim7"><img class="w-100" src="/assets/img/maldives.png" alt="">
+        <img class="resim-image" src="" alt="">
+        <p class="resim-paragrafi">Agra</p>
+        <p class="resim-paragrafi-2">10 Packages</p>
+      </div>
+      <div class="kisim8"><img class="w-100" src="/assets/img/kualalumpur.png" alt="">
+        <img class="resim-image" src="" alt="">
+        <p class="resim-paragrafi"></p>
+        <p class="resim-paragrafi-2"></p>
+      </div>
+
+    </div>
+
+    <!-- ============================================-->
+    <!-- <section> begin ============================-->
+    <section class="py-7" id="activities">
+
+      <div class="container  pt-5">
+        <div class="row g-0">
+          <div class="col-lg-4 order-1"><img class="w-100 mt-5 mt-lg-0" src="/assets/img/agra.png" height="700"
+              alt="..." /></div>
+          <div class="col-lg-8">
+            <div class="carousel slide" id="carouselActivity" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                  <div class="row h-100">
+                    <div class="col-12"><img class="w-100" src="/assets/img/burj.jpg" width="383" height="383"
+                        alt="..." />
+                      <div class="py-4">
+                        <h4 class="mb-2 text-1000 fw-bold">Participate in activities like</h4>
+                        <h2 class="mb-3 text-dark fs-3 fs-md-6">Bungee Jumping</h2>
+                        <p class="fw-normal mb-0 pe-lg-9">Bungee jumping, often known as bungy jumping, is a sport in
+                          which a person jumps from a considerable height while attached to a long elastic line.
+                          Usually, the pad is built on a high structure like a structure or a crane, a bridge across a
+                          steep ravine</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                  <div class="row h-100">
+                    <div class="col-12"><img class="w-100" src="/assets/img/cinnamon.png" width="383" alt="..." />
+                      <div class="py-4">
+                        <h4 class="mb-2 text-1000 fw-bold">Participate in activities like</h4>
+                        <h2 class="mb-3 text-dark fs-3 fs-md-6">Bungee Jumping</h2>
+                        <p class="fw-normal mb-0 pe-lg-9">Bungee jumping, often known as bungy jumping, is a sport in
+                          which a person jumps from a considerable height while attached to a long elastic line.
+                          Usually, the pad is built on a high structure like a structure or a crane, a bridge across a
+                          steep ravine</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="1000">
+                  <div class="row h-100">
+                    <div class="col-12"><img class="w-100" src="/assets/img/dhigu.png" width="383" alt="..." />
+                      <div class="py-4">
+                        <h4 class="mb-2 text-1000 fw-bold">Participate in activities like</h4>
+                        <h2 class="mb-3 text-dark fs-3 fs-md-6">Bungee Jumping</h2>
+                        <p class="fw-normal mb-0 pe-lg-9">Bungee jumping, often known as bungy jumping, is a sport in
+                          which a person jumps from a considerable height while attached to a long elastic line.
+                          Usually, the pad is built on a high structure like a structure or a crane, a bridge across a
+                          steep ravine</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="row h-100">
+                    <div class="col-12"><img class="w-100" src="/assets/img/maldives.png" width="383" alt="..." />
+                      <div class="py-4">
+                        <h4 class="mb-2 text-1000 fw-bold">Participate in activities like</h4>
+                        <h2 class="mb-3 text-dark fs-3 fs-md-6">Bungee Jumping</h2>
+                        <p class="fw-normal mb-0 pe-lg-9">Bungee jumping, often known as bungy jumping, is a sport in
+                          which a person jumps from a considerable height while attached to a long elastic line.
+                          Usually, the pad is built on a high structure like a structure or a crane, a bridge across a
+                          steep ravine</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row ps-sm-5 ps-md-0 align-items-end">
+                <div class="col-4 col-sm-6 position-relative z-index-2">
+                  <ol class="carousel-indicators me-xxl-7 me-xl-4 me-lg-7">
+                    <li class="active" data-bs-target="#carouselShare" data-bs-slide-to="0"></li>
+                    <li data-bs-target="#carouselShare" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselShare" data-bs-slide-to="2"></li>
+                    <li data-bs-target="#carouselShare" data-bs-slide-to="3"></li>
+                  </ol>
+                </div>
+                <div class="col-8 col-sm-6 position-relative z-index-2 text-end"><a class="btn btn-lg text-secondary"
+                    href="#" role="button">Read More
+                    <svg class="bi bi-arrow-right ms-2"  width="35" height="35"
+                      fill="currentColor" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z">
+                      </path>
+                    </svg></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of .container-->
+
+    </section>
+
+    <!-- <section> begin ============================-->
+      <section class="py-0 pt-5" id="flights">
+
+        <div class="container-fluid">
+          <div class="row h-100">
+            <div class="col-lg-7 mx-auto text-center mb-6">
+              <h5 class="fw-bold fs-3 fs-lg-5 lh-sm mb-3">Flights to Popular Places at the Best Costs</h5>
+            </div>
+          </div>
+          <div class="row g-0 flex-center">
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3"
+                style="background-color:#240D8C; min-height:230px; ">
+                <h5 class="text-light">Dhaka - Chittagong</h5>
+                <h6 class="text-light fw-normal fs-0">From $100</h6><i class="fas fa-arrow-right text-light mt-4"></i><a
+                  class="" href="#!"></a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3"
+                style="background-color:#3011BB; min-height:230px;">
+                <h5 class="text-light">Dhaka - Sylhet</h5>
+                <h6 class="text-light fw-normal fs-0">From $100</h6><i class="fas fa-arrow-right text-light mt-4"></i><a
+                  class="" href="#!"></a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3"
+                style="background-color:#4914DC; min-height:230px;">
+                <h5 class="text-light">Dhaka - Chittagong</h5>
+                <h6 class="text-light fw-normal fs-0">From $100</h6><i class="fas fa-arrow-right text-light mt-4"></i><a
+                  class="" href="#!"></a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3"
+                style="background-color:#6213D2; min-height:230px;">
+                <h5 class="text-light">Dhaka - Chittagong</h5>
+                <h6 class="text-light fw-normal fs-0">From $100</h6><i class="fas fa-arrow-right text-light mt-4"></i><a
+                  class="" href="#!"></a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3"
+                style="background-color:#4611BC; min-height:230px;">
+                <h5 class="text-light">Dhaka - Coxs Bazar</h5>
+                <h6 class="text-light fw-normal fs-0">From $100</h6><i class="fas fa-arrow-right text-light mt-4"></i><a
+                  class="" href="#!"></a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3"
+                style="background-color:#7013CE; min-height:230px;">
+                <h5 class="text-light">Dhaka - Sylhet</h5>
+                <h6 class="text-light fw-normal fs-0">From $100</h6><i class="fas fa-arrow-right text-light mt-4"></i><a
+                  class="" href="#!"></a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3"
+                style="background-color:#4611BC; min-height:230px;">
+                <h5 class="text-light">Dhaka - Coxs Bazar</h5>
+                <h6 class="text-light fw-normal fs-0">From $100</h6><i class="fas fa-arrow-right text-light mt-4"></i><a
+                  class="" href="#!"></a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3"
+                style="background-color:#6213D2; min-height:230px;">
+                <h5 class="text-light">Dhaka - Chittagong</h5>
+                <h6 class="text-light fw-normal fs-0">From $100</h6><i class="fas fa-arrow-right text-light mt-4"></i><a
+                  class="" href="#!"></a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3"
+                style="background-color:#240D8C; min-height:230px;">
+                <h5 class="text-light">Dhaka - Coxs Bazar</h5>
+                <h6 class="text-light fw-normal fs-0">From $100</h6><i class="fas fa-arrow-right text-light mt-4"></i><a
+                  class="" href="#!"></a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3"
+                style="background-color:#4914DC; min-height:230px;">
+                <h5 class="text-light">Dhaka - Sylhet</h5>
+                <h6 class="text-light fw-normal fs-0">From $100</h6><i class="fas fa-arrow-right text-light mt-4"></i><a
+                  class="" href="#!"></a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3"
+                style="background-color:#3011BB; min-height:230px;">
+                <h5 class="text-light">Dhaka - Chittagong</h5>
+                <h6 class="text-light fw-normal fs-0">From $100</h6><i class="fas fa-arrow-right text-light mt-4"></i><a
+                  class="" href="#!"></a>
+              </div>
+            </div>
+            <div class="col-12 col-sm-4 col-md-3 col-lg-4 col-xl-2">
+              <div class="d-flex flex-column justify-content-center px-3"
+                style="background-color:#4611BC; min-height:230px;">
+                <h5 class="text-light">Dhaka - Coxs Bazar</h5>
+                <h6 class="text-light fw-normal fs-0">From $100</h6><i class="fas fa-arrow-right text-light mt-4"></i><a
+                  class="" href="#!"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end of .container-->
+  
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+        <section class="py-0 overflow-hidden pt-5">
+  
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-6 col-sm-4 col-lg-6 bg-orange-gradient">
+                <div class="py-7 pt-3"><img class="d-inline-block" src="/assets/img/icon-location.png" width="50" alt="" /><span class="fw-bold fs-4 text-white ms-2">travella</span>
+                  <ul class="list-unstyled mt-4 ">
+                    <li class="mb-2 px-3"><a class="text-800 fw-bold text-decoration-none text-white" href="#!">News</a></li>
+                    <li class="mb-2 px-3"><a class="text-800 fw-bold text-decoration-none text-white" href="#!">Terms &amp; Conditions</a></li>
+                    <li class="mb-2 px-3"><a class="text-800 fw-bold text-decoration-none text-white" href="#!">Privacy</a></li>
+                    <li class="mb-2 px-3"><a class="text-800 fw-bold text-decoration-none text-white" href="#!">About Us</a></li>
+                    <li class="mb-2 px-3"><a class="text-800 fw-bold text-decoration-none text-white" href="#!">FAQs</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-6 col-8 col-lg-6 bg-gradient bg-offcanvas-right">
+                <div class="p-3 py-7 p-md-7">
+                  <p class="text-light"><i class="fas fa-phone-alt me-3"></i><span class="text-light">+3930219390</span></p>
+                  <p class="text-light"><i class="fas fa-envelope me-3"></i><span class="text-light">something@gmail.com</span></p>
+                  <p class="text-light"><i class="fas fa-map-marker-alt me-3"></i><span class="text-light lh-lg">333, Lorem Street, Albania, Alifornia<br/>United States of America</span></p>
+                  <div class="mt-6"><a href="#!"> <img class="me-3" src="" alt="" /></a><a href="#!"> <img class="me-3" src="" alt="..." /></a><a href="#!"> <img class="me-3" src="" alt="" /></a></div>
+                  <p class="mt-3 text-light text-center text-md-start"> Made with&nbsp;
+                    <svg class="bi bi-suit-heart-fill"  width="15" height="15" fill="#EB6453" viewBox="0 0 16 16">
+                      <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"></path>
+                    </svg>&nbsp;by&nbsp;<a class="text-light" target="_blank">Berat Güdelek&amp;Onur Kılıç </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> 
+        <!-- <section> close ============================-->
+
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&amp;display=swap"
+      rel="stylesheet">
+</body>
+
+</html>
