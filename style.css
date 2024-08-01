@@ -5,17 +5,7 @@
 html {
     scroll-behavior: smooth;
   }
-.btn-sign {
-    color: #3011BC;
-    border-top: 1px solid #3011BC;
-    border-left: 1px solid#3011BC;
-    
-}
 
-.btn-sign:hover {
-    background-color: #3011BC;
-    color: white;
-}
 
 .discover-text {
     color: #3011bc;
@@ -49,10 +39,7 @@ body {
     color: rgba(0, 0, 0, 0.322);
 }
 
-.travella-logo1 {
-    width: 142.61px;
-    height: 41.45px;
-}
+
 
 .search-button {
     background-color: orange;
@@ -170,15 +157,10 @@ body {
 }
 
 .bg-orange-gradient {
-    background: rgb(253,29,29);
-background: linear-gradient(90deg, rgba(253,29,29,1) 19%, rgba(252,176,69,1) 100%);
+    background: rgb(246,107,0);
+    background: linear-gradient(90deg, rgba(246,107,0,1) 21%, rgba(252,148,69,1) 81%);
 }
 
-element{
-    background-image: url(/assets/img/burj.jpg);
-    background-position-x:center ;
-    background-position-y: top;
-}
 
 .bg-holder {
     position: absolute;
@@ -195,9 +177,110 @@ element{
 }
 
 .bg-primary{
-    background-color: greenyellow !important;
+    background-color: #3011bc !important;
 }
 
 h4{
     color: darkblue !important;
 }
+
+.text-primary{
+    color: #3011bc !important;
+}
+
+.btn-outline-primary{
+    color: #3011bc;
+    background: #fff;
+    border-color: #3011bc;
+}
+
+.btn-outline-primary:hover{
+    background: #3011bc;
+}
+
+.btn-outline-primary2{
+    color: #ff4800;
+    background: #fff;
+    border-color: #ff2a00;
+}
+
+.btn-outline-primary2:hover{
+    background: #ff8800;
+    color: #fff;
+}
+
+.bg-holder {
+    position: absolute;
+    width: 100%;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    will-change: transform, opacity, filter;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    background-repeat: no-repeat;
+    z-index: 0;
+  }
+  
+  .bg-holder.bg-right {
+    left: auto;
+    right: 0;
+  }
+  
+  .bg-holder.overlay:before {
+    position: absolute;
+    content: "";
+    background: rgba(0, 0, 0, 0.25);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .bg-holder.overlay-0:before {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
+  .bg-holder.overlay-1:before {
+    background: rgba(0, 0, 0, 0.55);
+  }
+  
+  .bg-holder.overlay-2:before {
+    background: rgba(0, 0, 0, 0.4);
+  }
+  
+  .bg-holder .bg-video {
+    position: absolute;
+    display: block;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+    min-width: 100%;
+  }
+  
+  .bg-holder .bg-youtube {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .box-2{
+    background: rgb(246,107,0);
+    background: linear-gradient(90deg, rgba(246,107,0,1) 21%, rgba(252,148,69,1) 81%);
+  }
+
+  .bg-holder1{
+    background-image: url(assets/gallery/cta-bg.png);
+    background-position: center;
+    background-size: cover;
+  }
+
+  
